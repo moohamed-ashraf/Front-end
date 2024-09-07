@@ -1,0 +1,113 @@
+input {
+  width: 501px;
+  height: 56px;
+  top: 40px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(176, 175, 174, 1);
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 501px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+}
+.border-color {
+  border-color: rgba(176, 175, 174, 1);
+}
+
+.submit-btn {
+  width: 501px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  gap: 0px;
+  border-radius: 6.5px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: rgba(135, 30, 53, 1);
+  color: #fff;
+}
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: rgba(36, 34, 30, 1);
+  width: 501px;
+  height: 48px;
+}
+.card-body {
+  width: 565px;
+  height: 1112;
+  top: 226px;
+  left: 437px;
+  padding: 64px 32px 64px 32px;
+  gap: 32px;
+  opacity: 0px;
+}
+
+.dropdown-country {
+  width: 501px;
+  height: 56px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+.dropdown-date {
+  width: 145px;
+  height: 56px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.password-rules {
+  width: 501px;
+  height: 36px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(86, 85, 82, 1);
+}
+.login-label {
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(86, 85, 82, 1);
+}
+span {
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(135, 30, 53, 1);
+  gap: 5px;
+  text-decoration: underline;
+}
+span:hover {
+  cursor: pointer;
+}
+.form-label {
+  width: 501px;
+  height: 24px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
