@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
@@ -18,8 +13,12 @@ export class LoginComponent {
     country: '',
     password: '',
   };
-  loginpObj: any = {
+  loginObj: any = {
     email: '',
     password: '',
   };
+
+  constructor() {
+    console.log('works-login');
+  }
 }

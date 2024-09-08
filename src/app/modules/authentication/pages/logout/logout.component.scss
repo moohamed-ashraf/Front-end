@@ -1,0 +1,32 @@
+.btn-primary {
+  background-color: #8b1e2c;
+  border-color: #8b1e2c;
+}
+
+.btn-primary:hover {
+  background-color: #6f1621;
+}
+
+.text-decoration-underline {
+  color: rgba(135, 30, 53, 1);
+}
+
+.bi-eye-slash {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.alert {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 415.09px;
+  height: 120px;
+  gap: 0px;
+  opacity: 0px;
+  color: rgba(86, 85, 82, 1);
+  background-color: rgba(227, 226, 226, 1);
+}
+a:hover {
+  cursor: pointer;
+}
