@@ -6,7 +6,7 @@ import { LogoutComponent } from '../../../modules/authentication/pages/logout/lo
 })
 export class InactiveService {
   private timeout: any;
-  private readonly inactivityLimit = 1 * 60 * 1000;
+  private readonly inactivityLimit = 2 * 60 * 1000;
   constructor(private ngZone: NgZone, private router: Router) {
     this.startMonitoring();
   }
