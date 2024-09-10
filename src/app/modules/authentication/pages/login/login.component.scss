@@ -1,10 +1,10 @@
 .btn-primary {
   background-color: #8b1e2c;
   border-color: #8b1e2c;
-}
 
-.btn-primary:hover {
-  background-color: #6f1621;
+  &:hover {
+    background-color: #6f1621;
+  }
 }
 
 .text-decoration-underline {
