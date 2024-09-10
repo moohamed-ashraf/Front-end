@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',

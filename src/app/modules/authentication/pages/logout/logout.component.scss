@@ -10,18 +10,22 @@
 .text-decoration-underline {
   color: rgba(135, 30, 53, 1);
 }
-
-.bi-eye-slash {
-  font-size: 1.2rem;
-  cursor: pointer;
+.exclamtion-icon {
+  margin-top: 20px;
+  font-size: 40px;
 }
-
+.close-icon {
+  top: 13.52px;
+  left: 13.52px;
+  border: 3px 0px 0px 0px;
+  font-size: 50px;
+}
 .alert {
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
-  width: 415.09px;
+  width: 500px;
   height: 120px;
   gap: 0px;
   opacity: 0px;
@@ -33,4 +37,8 @@ a {
   &:hover {
     cursor: pointer;
   }
+}
+
+.eye {
+  color: rgba(137, 136, 134, 1);
 }
