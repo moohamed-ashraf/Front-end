@@ -1,2 +1,28 @@
-<app-header></app-header>
-<img [src]="imgSrc" alt="" />
+<div class="header">
+  <div class="container">
+    <h1>My Account</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a> Home </a>
+        </li>
+        <li aria-current="page" class="breadcrumb-item active">My Account</li>
+        <div class="bg-black"></div>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 sidebar">
+      <a href="#" class="active">My profile</a>
+      <a href="#">Payments history</a>
+      <a href="#">Settings</a>
+      <a href="#">Change password</a>
+    </div>
+    <div class="col-md-9 content">
+      <app-content></app-content>
+    </div>
+  </div>
+</div>
