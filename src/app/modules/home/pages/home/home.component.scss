@@ -1,0 +1,68 @@
+$gray:#FFFFFF;
+
+.publicity-component{
+height: 800px;
+left: calc(50% - 1440px/2);
+top: 91px;
+gap: 64px;
+background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(/public/giftbiz2.png) no-repeat center/cover;
+ .create-an-acount{
+ width: Fixed (634px)px;
+height: Hug (422px)px;
+top: 280px;
+left: 96px;
+
+opacity: 0px;
+
+   .create{
+background: #871E35;
+border: 1px solid #871E35;
+color:$gray;
+width:  Fixed ( 192px)px;
+height: 56px;
+padding: 16px 32px 16px 32px;
+gap: 0px;
+border-radius: 6.5px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+ }
+ }
+ .send-amount{
+    width: Hug (481px)px;
+height: Hug (360px)px;
+top: 311px;
+left: 863px;
+padding: 32px 0px 0px 0px;
+gap: 32px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+background: #FFFFFF;
+
+ .send{
+    color:$gray;
+    width:417px;
+    height: Hug (56px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 0px;
+    border-radius: 6.5px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #871E35;
+    border: 1px solid #871E35
+ }
+}
+}
+.start{
+    align-items: center;
+    background: #FBFBFB;
+    h2{
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+color: #871E35;
+
+    }
+}
