@@ -14,6 +14,8 @@ import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
+  faEye = faEyeSlash;
+
   signupUsers: any[] = [];
   signupObj: any = {
     userName: '',
