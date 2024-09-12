@@ -92,7 +92,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Password</label>
+          <label for="email" class="form-label pass1">Password</label>
           <input
             formControlName="password"
             type="password"
@@ -100,6 +100,9 @@
             id="password"
             placeholder="************"
           />
+          <span class="position-absolute translate-middle-y pe-3 m-3 eye">
+            <fa-icon [icon]="faEye" class="eye"></fa-icon>
+          </span>
         </div>
 
         <div class="mb-3">
@@ -110,6 +113,9 @@
             id="password"
             placeholder="************"
           />
+          <span class="position-absolute translate-middle-y pe-3 m-3 eye2">
+            <fa-icon [icon]="faEye" class="eye"></fa-icon>
+          </span>
         </div>
         <label for="text" class="password-rules"
           >The password should be at least eight characters long. To make it

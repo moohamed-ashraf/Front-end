@@ -7,19 +7,17 @@ import { SharedModule } from '../../shared/shared.module';
 import { AuthenticationWrapperComponent } from './components/authentication-wrapper/authentication-wrapper.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    RegisterComponent,
-    LoginComponent,
-    AuthenticationWrapperComponent,
-  ],
+  declarations: [AuthenticationWrapperComponent],
   imports: [
     CommonModule,
     AuthenticationRoutingModule,
     SharedModule,
     HeaderComponent,
     FooterComponent,
+    ReactiveFormsModule,
   ],
 })
 export class AuthenticationModule {}

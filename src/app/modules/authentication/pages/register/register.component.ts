@@ -4,12 +4,22 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-register',
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    FontAwesomeModule,
+    ReactiveFormsModule,
+  ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',
 })
 export class RegisterComponent implements OnInit {
+  faEye = faEyeSlash;
+
   registerForm: FormGroup = new FormGroup({});
   years: number[] = [];
   constructor(private fb: FormBuilder) {
