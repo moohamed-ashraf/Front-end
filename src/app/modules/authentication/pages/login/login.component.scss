@@ -1,0 +1,17 @@
+.btn-primary {
+  background-color: #8b1e2c;
+  border-color: #8b1e2c;
+
+  &:hover {
+    background-color: #6f1621;
+  }
+}
+
+.text-decoration-underline {
+  color: rgba(135, 30, 53, 1);
+}
+
+.bi-eye-slash {
+  font-size: 1.2rem;
+  cursor: pointer;
+}

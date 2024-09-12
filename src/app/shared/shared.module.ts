@@ -8,6 +8,12 @@ import { MobileApplicationComponent } from './mobile-application/mobile-applicat
 @NgModule({
   declarations: [NavbarComponent, FooterComponent, MobileApplicationComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
-  exports: [NavbarComponent, FooterComponent, MobileApplicationComponent],
+  exports: [
+    NavbarComponent,
+    FooterComponent,
+    MobileApplicationComponent,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
 })
 export class SharedModule {}

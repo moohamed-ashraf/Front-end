@@ -1,1 +1,133 @@
-<p>register works!</p>
+<app-header></app-header>
+
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h1 class="card-title text-start mb-4">Create Your Account</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
+        tempor incididunt ut labore.
+      </p>
+
+      <form [formGroup]="registerForm" (ngSubmit)="submit()">
+        <div class="row">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">Full Name</label>
+            <input
+              formControlName="fName"
+              type="text"
+              class="form-control border-color"
+              id="firstName"
+              placeholder="Full name"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control border-color"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="country" class="form-label">Country</label>
+          <div class="input-group">
+            <select
+              formControlName="countryId"
+              class="form-select border-color"
+              aria-label="Default select example"
+            >
+              <option value="" disabled>UK</option>
+              <option value="1">USA</option>
+              <option value="2">Egypt</option>
+              <option value="3">UK</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="day" class="w-100 form-label">Day</label>
+            <input
+              formControlName="day"
+              type="number"
+              maxlength="2"
+              class="w-100 form-control border-color"
+              id="day"
+              placeholder="DD"
+            />
+          </div>
+          <div class="col-md-3 mb-3 row-gap-md-2">
+            <label for="confirmPassword" class="form-label mx-2">Month</label>
+            <select
+              formControlName="month"
+              class="form-select border-color"
+              style="height: 56px; width: 195.67px"
+            >
+              <option value="" disabled selected>Month</option>
+              <option>august</option>
+              <option>March</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3 ms-auto">
+            <label for="confirmPassword" class="form-label mx-2">Year</label>
+            <div class="input-group">
+              <select
+                formControlName="year"
+                class="form-select border-color"
+                style="width: 128.33px; height: 56px"
+              >
+                <option value="" disabled selected>YYYY</option>
+
+                @for (year of years; track $index) {
+                <option [value]="year">{{ year }}</option>
+                }
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Password</label>
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control border-color"
+            id="password"
+            placeholder="************"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Confirm Password</label>
+          <input
+            type="password"
+            class="form-control border-color"
+            id="password"
+            placeholder="************"
+          />
+        </div>
+        <label for="text" class="password-rules"
+          >The password should be at least eight characters long. To make it
+          stronger, use upper and lower case letters, numbers, and symbols like
+          ! " ? $ % ^ & )</label
+        >
+        <button type="submit" class="btn w-100 submit-btn my-3">
+          Create Account
+        </button>
+        <div class="d-flex">
+          <label for="text" class="login-label"
+            >Already have an account?<a class="mx-2" routerLink="/Login"
+              >Login</a
+            ></label
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

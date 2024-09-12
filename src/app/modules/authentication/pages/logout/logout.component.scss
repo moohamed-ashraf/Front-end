@@ -1,0 +1,44 @@
+.btn-primary {
+  background-color: #8b1e2c;
+  border-color: #8b1e2c;
+
+  &:hover {
+    background-color: #6f1621;
+  }
+}
+
+.text-decoration-underline {
+  color: rgba(135, 30, 53, 1);
+}
+.exclamtion-icon {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.close-icon {
+  top: 13.52px;
+  left: 13.52px;
+  border: 3px 0px 0px 0px;
+  font-size: 50px;
+}
+.alert {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  width: 500px;
+  height: 120px;
+  gap: 0px;
+  opacity: 0px;
+  color: rgba(86, 85, 82, 1);
+  background-color: rgba(227, 226, 226, 1);
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.eye {
+  color: rgba(137, 136, 134, 1);
+}

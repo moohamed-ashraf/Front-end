@@ -1,13 +1,17 @@
 <app-header></app-header>
-<h2 class="text-center mb-4">Login</h2>
-<p class="text-center">
-  <span>New Account?</span>
-  <a routerLink="register" class="text-decoration-underline sign-up">Sign Up</a>
-</p>
+<div class="d-flex justify-content-center">
+  <div class="alert d-flex justify-content-between">
+    <fa-icon [icon]="faexclamationCircle" class="exclamtion-icon"></fa-icon>
+    <p class="text-center">
+      We Logged you out because you were inactive for 2 minutes - it's to help
+      your account secure
+    </p>
+    <label class="close-icon text-end m-2">&times;</label>
+  </div>
+</div>
 <div class="container d-flex align-items-center justify-content-center">
   <div class="card p-4" style="width: 400px">
-    <h3 class="mb-3">Login here</h3>
-    <p class="mb-4">Welcome back. Login to your account</p>
+    <h3 class="mb-3">Welcome back</h3>
 
     <form action="">
       <div class="mb-3">
@@ -28,19 +32,15 @@
           id="password"
           placeholder="**********"
         />
-        <span class="position-absolute top-50 end-0 translate-middle-y pe-3">
-          <i class="bi bi-eye-slash"></i>
+
+        <span
+          class="position-absolute top-50 end-0 translate-middle-y pe-3 m-3"
+        >
+          <fa-icon [icon]="faEye" class="eye"></fa-icon>
         </span>
       </div>
 
       <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
-
-      <p class="text-center">
-        Don't have an account?
-        <a routerLink="register" class="text-decoration-underline"
-          >Create Account</a
-        >
-      </p>
     </form>
   </div>
 </div>
