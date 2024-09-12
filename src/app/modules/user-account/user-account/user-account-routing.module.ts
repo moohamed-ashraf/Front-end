@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { MoneyTransferComponent } from '../../../money-transfer/money-transfer.component';
+const routes: Routes = [{ path: '', component: MoneyTransferComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
