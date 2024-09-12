@@ -1,0 +1,167 @@
+.money-transfer-container {
+  font-family: "Arial", sans-serif;
+
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 15px;
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+
+    .auth-buttons {
+      button {
+        margin-left: 10px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+
+        &.login-btn {
+          background-color: transparent;
+          color: #333;
+          border: 1px solid #333;
+        }
+
+        &.register-btn {
+          background-color: #c93b3b;
+          color: white;
+        }
+      }
+    }
+  }
+
+  main {
+    .money-transfer-section {
+      padding: 30px 20px;
+      background-color: #f5f5f5;
+
+      h1 {
+        font-size: 36px;
+        color: #333;
+      }
+
+      .breadcrumb {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .transfer-steps {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        .step {
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          &.active {
+            background-color: #c93b3b;
+            color: white;
+          }
+        }
+      }
+
+      .transfer-form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        label {
+          display: block;
+          margin-top: 10px;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        .continue-btn {
+          background-color: #c93b3b;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .app-promotion {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+        }
+      }
+
+      .app-links {
+        margin-top: 20px;
+
+        img {
+          width: 120px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #3c3c3c;
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+    .footer-content {
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .copyright {
+    background-color: #292929;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

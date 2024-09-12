@@ -4,6 +4,8 @@ import { LoginComponent } from './modules/authentication/pages/login/login.compo
 import { MyProfileComponent } from './modules/user-account/user-account/pages/profile/my-profile/my-profile.component';
 
 import { AuthenticationWrapperComponent } from './modules/authentication/components/authentication-wrapper/authentication-wrapper.component';
+import { Component } from '@angular/core';
+import { MoneyTransferComponent } from './money-transfer/money-transfer.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,6 +23,14 @@ export const routes: Routes = [
     component: HomeWrapperComponent,
     loadChildren: () =>
       import('./modules/home/home.module').then((m) => m.HomeModule),
+  },
+  {
+    path: 'money-transfer',
+    component: MoneyTransferComponent,
+    loadChildren: () =>
+      import(
+        './modules/money-transfer/money-transfer/money-transfer.module'
+      ).then((m) => m.MoneyTransferModule),
   },
   {
     path: 'profile',
