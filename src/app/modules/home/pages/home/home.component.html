@@ -1,1 +1,47 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<div class="publicity-component d-flex">
+    <div class="create-an-acount">
+        <p>Simple. Quick. Secure.</p>
+        <h1>Send Money Anywhere, Instantly</h1>
+        <p>Fast, secure, and affordable international money transfers. Get started in minutes</p>
+        <button type="button" class="create">Create An Account</button>
+    </div>
+    <div class="send-amount">
+        <form>
+            <label>Send Amount</label>
+            <input type="number" value="1000">
+            <p>Delivery Time: By<span> {{ date | date:"LLLL d"}}</span></p>
+            <button type="button" class="send">continue</button>
+            <p>By Clicking Continue, I’m agree with <span style="color: #871E35;">Terms & Policy</span></p>
+        </form>
+    </div>
+</div>
+<div class="start d-flex flex-column">
+    <h2>Getting Started</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+    <div class="d-flex gap-3">
+       <div class="bg-white">
+        <img src="/public/Group 20.svg">
+        <h3><span style="color:#871E35;">1.</span> Create Account</h3>
+        <p>Adipiscing eliId neque mi diam nim
+            etus arcu porta viverra pretium
+            auctor ut nam sed.</p>
+       </div> 
+       <div class="bg-white">
+        <img src="/public/Group 19.svg">
+        <h4><span style="color:#871E35;">2.</span> Confirmation</h4>
+        <p>Adipiscing eliId neque mi diam nim
+            etus arcu porta viverra pretium
+            auctor ut nam sed.</p>
+       </div> 
+       <div class="bg-white">
+        <img src="/public/Group 17.svg">
+        <h5><span style="color:#871E35;">3. </span>Payment</h5>
+        <p>Adipiscing eliId neque mi diam nim
+            etus arcu porta viverra pretium
+            auctor ut nam sed.</p>
+       </div> 
+    </div>
+</div>
+<app-mobile-application></app-mobile-application>
+<app-footer></app-footer>
